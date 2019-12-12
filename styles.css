@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin|Herr+Von+Muellerhoff|Source+Sans+Pro:400,900&display=swap');
+/*Global styles*/
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-font: 'Source Sans Pro', sans-serif;
+    --secondary-font: 'Herr Von Muellerhoff', cursive;
+    --body-font: 'Cabin', sans-serif;
+    --main-font-color-dark: #252525;
+    --secondary-font-color: #c59d5f;
+    --body-font-color: #515151;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+display: flex;
+ width: 100vw;
+ height: 100vh;
+justify-content: center;
+align-items: center;
+}
+
+#first-flower{
+animation: flower1 2s infinite linear;
+transform-origin: center;
+transform-box: fill-box;
+}
+#second-flower{
+animation: flower2 3s infinite linear;
+transform-origin: center;
+transform-box: fill-box;
+}
+#third-flower{
+animation: flower3 2s infinite linear;
+transform-origin: center;
+transform-box: fill-box;
+}
+@keyframes flower1{
+    from{
+        transform: rotateZ(25deg);
+    }
+    to{
+        transform: rotateZ(-20deg);
+    }
+
+}
+@keyframes flower2{
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(-90deg);
+
+    }
+
+}
+@keyframes flower3{
+    from{
+        transform: rotateY(360deg);
+    }
+    to{
+        transform: rotateY(90deg);
+
+    }
+
+}
+.line{
+    width: 112px;
+    height: 47px;
+    border-bottom: 1px solid black;
+  margin: auto;
+}
+.container{
+    padding: 1.5rem 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-family:var(--body-font);
+    color: darkblue;
+    letter-spacing: 2px;
+   font-weight: 100;
+}
+svg{
+    width: 800px;
+    max-width: 95%;
+    margin: 0 2%;
+    height: 60vh;
+}
